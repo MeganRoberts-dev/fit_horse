@@ -32,7 +32,7 @@ The wesbite incorporates a grass green backrgound in keping with the horse theme
 
 I used coolors.co for my colour pallete. (https://coolors.co/475057-fdfdfd-22a80a-24101c) 
 
-![screenshot](/assets/documentation/fit-horse-coolors.png)
+![screenshot](/assets/documentation/colours/fit-horse-coolors.png)
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
 
@@ -84,7 +84,7 @@ I've used [Figma](https://www.figma.com/file/l2P9ZpD1xivVZg4eyKb2yn/Dressage-Clu
 
 <details>
 <summary> Click here to see the Mobile Wireframes </summary>
-  - ![screenshot](/assets/documentation/wireframe-mobile.png)
+  - ![screenshot](/assets/documentation/wireframe/wireframe-mobile.png)
 </details>
 
 ### Tablet Wireframes
