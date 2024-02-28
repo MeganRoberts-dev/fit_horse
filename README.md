@@ -261,7 +261,7 @@ You can fork this repository by using the following steps:
 | [YouTube](https://www.youtube.com/watch?v=gqOEoUR5RHg) | Boostrap tutorial | Tutorial for understanding boostrap |
 | [CodeInstitute](https://learn.codeinstitute.net/dashboard) | Entire site | Gained knowledge and understanding of HTML/ CSS and web building |
 | [Stackoverflow](https://stackoverflow.com/) | Entire site | Helped with troubleshooting |
-| [Bootstrap v5.0.2](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | Entire site/HTML files | used throughout site for a responsive design |
+
 
 
 ### Media
@@ -273,6 +273,7 @@ You can fork this repository by using the following steps:
 | [Bootstrap](https://icons.getbootstrap.com/) | Home page | Icon | Trophy icon for events|
 | [Shutterstock](https://www.shutterstock.com/image-photo/portrait-red-dressage-horse-young-woman-1725894646)(https://www.shutterstock.com/image-photo/horse-dressage-quadrangle-on-hoof-stroke-1332691166)(https://www.shutterstock.com/image-photo/equestrian-sport-portrait-dressage-horse-training-2053178834)(https://www.shutterstock.com/th/image-photo/top-view-girl-lies-on-horse-1725894073)(https://www.shutterstock.com/image-photo/dressage-portrait-sorrel-horse-on-nature-80416996)(https://www.shutterstock.com/sv/image-photo/black-dressage-horse-detail-isolated-on-483577879) | Gallery page | Image | Group of photos for gallery |
 | [Pexels](https://www.pexels.com/photo/woman-sitting-on-a-horse-4894985/) | Gallery page | Image | Group of photos for gallery |
+| [Flaticon](https://www.flaticon.com/free-stickers/horse) created by Surfsup.Vector - Flaticon | Entire site | Sticker | Used for horse sticker image |
 
 ### Acknowledgements
 
