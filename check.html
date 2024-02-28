@@ -4,41 +4,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>BMI Calculator | Dev Hub asmr</title>
+    <meta name="description" content="Calculate your horses weight and gain expert advice based on your results.">
+    <meta name="keywords" content="horse, weight, calculate, advice">
+    <title>Fit Horse</title>
+    <!--Boostrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Faveicon -->
+    <link>
+    </link>
 </head>
 
 <body>
-    <div class="container">
-        <h1>BMI Calculator</h1>
-        <div class="calculator">
-            <div class="input-group">
-                <label for="gender">Gender</label>
-                <select id="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
+    <h1>Fit Horse</h1>
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Check</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="advice.html">Advice</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="input-group">
-                <label for="age">Age</label>
-                <input type="number" id="age" placeholder="Enter your age" required>
-            </div>
-            <div class="input-group">
-                <label for="weight">Weight (kg)</label>
-                <input type="number" id="weight" placeholder="Enter your weight" required>
-            </div>
-            <div class="input-group">
-                <label for="height">Height (cm)</label>
-                <input type="number" id="height" placeholder="Enter your height" required>
-            </div>
-            <button id="calculate">Calculate BMI</button>
-            <div class="result">
-            <h2>Results:</h2>
-            <p id="bmiResult"></p>
-            <p id="bmiInfo"></p>
-            <p id="standardWeight"></p>
         </div>
+    </nav>
+
+    <!-- Check -->
+    <main class="container">
+
+        <div class="text-center">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="assets/images/horse-jump.png" alt="Fit Horse logo" id="image">
+            </a>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="calculator text-center">
+            <!--- Info  button -->
+            <i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalInfo"></i>
+            <!-- Modal -->
+            <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modalInfoLabel">How to get measurements</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <h3>Heartgirth:</h3> 
+                           <p>...</p>
+                           <h3>Length:</h3> 
+                           <p>...</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Input -->
+            <div class="container-1">
+                <div class="text-center">
+                    <h2>Calculate Horse's Weight</h2>
+                    <label for="heartgirth">Heartgirth (in inches):</label>
+                    <input type="number" id="heartgirth" placeholder="Enter heartgirth" required>
+                    <label for="length">Length (in inches):</label>
+                    <input type="number" id="length" placeholder="Enter length" required>
+                    <div class="text-center">
+                        <!-- <button class="pushable" id="playButton" type="submit" disabled>
+                            <span class="shadow"></span>
+                            <span class="edge"></span>
+                            <span class="front"> Go </span>
+                        </button> -->
+                    </div>
+                    <p id="result"></p>
+                    <p id="bmiResult"></p>
+                    <p id="bmiInfo"></p>
+                </div>
+
+            </div>
+            <button id="reset">Reset</button>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
+</html>
