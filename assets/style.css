@@ -14,16 +14,21 @@ body {
     align-items: center;
     justify-content: center;
 }
-/* Navbar */
-.logo {
-    height: 100px;
-    width: 100px;
-    margin-bottom: 10px;
-    border-radius: 50%;
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    font-weight: 800;
 }
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10px;
+    border-radius: 15px;
 
+}
 .container {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     padding: 20px 23px 20px 23px;
     background-color: #ffffff;
@@ -31,13 +36,64 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
 }
-
-h1 {
-    text-align: center;
-    color: #333;
-    font-size: 22px;
+/* Navbar */
+.navbar-nav{
+    font-weight: 800;
 }
 
+/* INDEX Main */
+.card-body {
+    border-style: double;
+}
+.container-info {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 23px 20px 23px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/* Button */
+.pushable {
+  background: #5a7722 ;
+  border-radius: 15px;
+  box-shadow:  #beb135 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji", NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-top: 5px;
+}
+
+/* CHECK HTML */
+.result {
+    display: none;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 25px;
+}
+
+.result h2 {
+    font-size: 19px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
 .input-group {
     margin-bottom: 20px;
 }
@@ -56,37 +112,38 @@ select {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
-button {
-    width: 100%;
-    letter-spacing: 1px;
-    padding: 10px;
-    background-color: #0d1641;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 16px;
+.info-reset-button-container {
+    background-color: #67216c;
+}
+.bi-info-circle {
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 50px;
 }
+/* ADVICE HTML */ 
+.container-1 {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 23px 20px 23px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
-button:hover {
-    background-color: #06376c;
 }
+.container-2 {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 23px 20px 23px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
-.result {
-    display: none;
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
-    line-height: 25px;
 }
+.container-3 {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px 23px 20px 23px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
-.result h2 {
-    font-size: 19px;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    
 }
