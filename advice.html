@@ -48,142 +48,347 @@
     </nav>
     <!-- Main -->
     <main>
-    <div class="container">
-    <div class="text-center">
-        <h1>Get some expert advice</h1>
-        <a class="navbar-brand" href="#">
-            <img class="logo" src="assets/images/cook-icon.png" alt="Fit Horse logo" id="image">
-        </a>
-    </div>
-    <div class="row align-items-center">
+        <div class="container">
+            <div class="modal-header text-center">
+                <h1>Get some expert advice on feeding your horse.</h1>
+                <img class="logo" src="assets/images/cook-icon.png" alt="Cartoon horse cooking" id="cookIcon">
+            </div>
+            <div class="row">
+                <div class="container-fluid">
 
-            <!-- Underweight -->
-            <div class="col">
-                    <div class="container-1" data-bs-toggle="modal" data-bs-target="#modalInfo">
-                        Underweight
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalInfoLabel">Top vet advice</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                   <img src="/assets/images/cute-icon.png" id="cute-icon" alt="Cute cartoon horse sitting down">
-                                    <div class="modal-body">
-                                        <h3></h3>
-                                        <p>As a veterinarian, here are some simple steps you can take to help look after an underweight horse:
+                    <!--underweight container-->
+                    <div class="col">
+                        <div class="container-under" data-bs-toggle="modal" data-bs-target="#underModal">
+                            <h5>Underweight</h5>
+                            <p>
+                                Feeding an underweight horse
+                            </p>
+                            <div class="card-footer">
 
-                                            - **Assessment**: 
-                                              - Evaluate the horse's body condition score (BCS) to determine the severity of underweight.
-                                              - Look for signs of malnutrition such as prominent ribs, hip bones, and a lack of muscle tone.
-                                              
-                                            - **Feed Quality Forage**:
-                                              - Provide high-quality forage such as grass hay or alfalfa to meet the horse's basic nutritional needs.
-                                              - Ensure the forage is free from mold, dust, and contaminants that could cause digestive issues.
-                                            
-                                            - **Supplement with Concentrates**:
-                                              - Supplement the horse's diet with concentrates such as grain or commercial feed designed for underweight horses.
-                                              - Choose feeds high in protein, fat, and easily digestible carbohydrates to support weight gain and muscle development.
-                                            
-                                            - **Feed Small, Frequent Meals**:
-                                              - Divide the horse's daily ration into several small meals to promote efficient digestion and nutrient absorption.
-                                              - Avoid overfeeding or sudden increases in feed volume to prevent digestive upset.
-                                            
-                                            - **Monitor Weight Gain**:
-                                              - Weigh the horse regularly to track progress and adjust feeding accordingly.
-                                              - Aim for gradual weight gain of 1-2 pounds per day to avoid metabolic issues associated with rapid weight gain.
-                                            
-                                            - **Provide Clean Water**:
-                                              - Ensure the horse has access to clean, fresh water at all times to support digestion, hydration, and overall health.
-                                              - Monitor water intake to detect any changes that may indicate health issues.
-                                            
-                                            - **Routine Veterinary Care**:
-                                              - Schedule regular veterinary check-ups to monitor the horse's health and nutritional status.
-                                              - Discuss any concerns or changes in the horse's condition with your veterinarian to develop an appropriate care plan.
-                                            
-                                            - **Dental Care**:
-                                              - Schedule regular dental exams and floating (rasping) as needed to maintain proper chewing and digestion.
-                                              - Dental issues can interfere with the horse's ability to eat and absorb nutrients effectively.
-                                            
-                                            - **Parasite Control**:
-                                              - Implement a regular deworming program as recommended by your veterinarian to control internal parasites.
-                                              - Parasite infestations can contribute to weight loss and poor condition in horses.
-                                            
-                                            - **Environmental Management**:
-                                              - Provide a clean, dry, and sheltered environment to minimize stress and support overall well-being.
-                                              - Monitor herd dynamics to ensure the underweight horse has access to food without competition from more dominant horses.
-                                            
-                                            - **Exercise and Turnout**:
-                                              - Incorporate regular exercise and turnout into the horse's routine to promote muscle development and overall fitness.
-                                              - Gradually increase exercise intensity as the horse gains weight and strength.
-                                            
-                                            By following these simple steps and working closely with your veterinarian, you can help ensure the health and well-being of your underweight horse and support them on their journey to reaching a healthy body condition.</p>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Back</button>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Healthy weight -->
-                    <div class="col">  
-                        <div class="container-2" data-bs-toggle="modal" data-bs-target="#modalInfo">
-                        Manage weight
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalInfoLabel">Keeping a healthy weight.</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h3>Top tip:</h3>
-                                        <p>...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Back</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Overweight -->
+                <!--Healthy container-->
                 <div class="col">
-                    <div class="container-3" data-bs-toggle="modal" data-bs-target="#modalInfo">
-                        Overweight
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="modalInfoLabel">For an overweight horse</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h3>Top tip</h3>
-                                        <p>...</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Back</button>
-                                    </div>
+                    <div class="container-healthy" data-bs-toggle="modal" data-bs-target="#manageModal">
+                        <h5>Manage weight</h5>
+                        <p>
+                            Feeding a healthy horse
+                        </p>
+                        <div class="card-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Overweight container-->
+            <div class="col">
+                <div class="container-over" data-bs-toggle="modal" data-bs-target="#overModal">
+                    <h5>Overweight</h5>
+                    <p>
+                        Feeding an overweight horse
+                    </p>
+                    <div class="card-footer">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Underweight Modal-->
+        <div class="modal fade" id="underModal" tabindex="-1" aria-labelledby="underModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content fs-5 lh-sm"><button type="button"
+                        class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="underModalLabel"><img class="rounded mx-auto d-block"
+                                src="/assets/images/sleeping-icon.png" id="sleepingIcon"
+                                alt="Cute cartoon horse sitting down">
+                            Our top tips for looking after
+                            an underweight horse:
+                        </h1>
+                    </div>
+
+                    <div class="modal-body">
+                        <h3 class="lh-lg">
+                            <b>Assess:</b></h4>
+                            <p class="lh-lg">
+                                Evaluate the horse's body condition score (BCS) to determine the
+                                severity
+                                of underweight.
+                                Look for signs of malnutrition such as prominent ribs, hip
+                                bones, and a
+                                lack of muscle tone.</p>
+
+                            <h3 class="lh-lg"><b>Forage:</b></h3>
+                            <p class="lh-lg">
+                                Provide high-quality forage such as grass hay or alfalfa to meet
+                                the
+                                horse's basic nutritional needs.
+                                Ensure the forage is free from mold, dust, and contaminants that
+                                could
+                                cause digestive issues.</p>
+
+                            <h3 class="lh-lg">
+                                <b>Supplements:</b>
+                            </h3>
+                            <p class="lh-lg">
+                                Supplement the horse's diet with concentrates such as grain or
+                                commercial
+                                feed designed for underweight horses.
+                                Choose feeds high in protein, fat, and easily digestible
+                                carbohydrates
+                                to
+                                support weight gain and muscle development.</p>
+
+                            <h3 class="lh-lg"><b>Feed Small & Frequent Meals:</b></h3>
+                            <p class="lh-lg">Divide the horse's daily ration into several small
+                                meals to promote
+                                efficient digestion and nutrient absorption.
+                                Avoid overfeeding or sudden increases in feed volume to prevent
+                                digestive
+                                upset.</p>
+
+                            <h3 class="lh-lg"><b>Monitor Weight:</b></h3>
+                            <p class="lh-lg"> Weigh the horse regularly to track progress and
+                                adjust feeding
+                                accordingly.
+                                Aim for gradual weight gain of 1-2 pounds per day to avoid
+                                metabolic
+                                issues associated with rapid weight gain.</p>
+
+                            <h3 class="lh-lg"><b>Dental Care:</b></h3>
+                            <p class="lh-lg"> Schedule regular dental exams and floating
+                                (rasping) as needed to
+                                maintain
+                                proper chewing and digestion.
+                                Dental issues can interfere with the horse's ability to eat and
+                                absorb
+                                nutrients effectively.</p>
+
+                            <h3 class="lh-lg"><b>Parasite Control:</b></h3>
+                            <p class="lh-lg">Implement a regular deworming program as
+                                recommended by your
+                                veterinarian
+                                to control internal parasites.
+                                Parasite infestations can contribute to weight loss and poor
+                                condition
+                                in
+                                horses.</p>
+
+                            <h3 class="lh-lg"><b>Exercise and Turnout:</b></h3>
+                            <p class="lh-lg"> Incorporate regular exercise and turnout into the
+                                horse's routine to
+                                promote muscle development and overall fitness.
+                                Gradually increase exercise intensity as the horse gains weight
+                                and
+                                strength.</p>
+                            </p>
+
+                            <div class="row mx-auto">
+                                <div class="col lh-lg">
+                                    <p><em> Follow these simple steps and regain your horses
+                                            health!
+                                            Or for more advice contact your local vet.
+                                        </em></p>
+                                </div>
+                                <div class="col">
+                                    <img class="rounded mx-auto d-block" src="/assets/images/healthy-horse.png"
+                                        id="healthyHorse">
                                 </div>
                             </div>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Healhty Modal-->
+        <div class="modal fade" id="manageModal" tabindex="-1" aria-labelledby="manageModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content fs-5 lh-sm"><button type="button"
+                    class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="manageModalLabel"><img class="rounded mx-auto d-block"
+                                src="/assets/images/unicorn-icon.png" id="unicornIcon"
+                                alt="Cute cartoon unicorn">
+                            Our top tips for looking after
+                            a healthy horse:
+                        </h1>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="lh-lg">
+
+                            <h3 class="lh-lg"><b>Forage:</b></h3>
+                            <p class="lh-lg">
+                                Ensure your horse has access to good-quality forage such as grass hay or pasture.
+                                Forage should make up the majority of the horse's diet and provide
+                                essential fiber and nutrients.</p>
+
+                            <h3 class="lh-lg"><b>Monitor Weight:</b></h3>
+                            <p class="lh-lg"> Regularly assess your horse's body condition score using a standardized
+                                scale.
+                                Aim for a score of 5 on a scale of 1 to 9,
+                                indicating an ideal body condition with moderate fat cover over the ribs
+                                and a visible waist when viewed from above.</p>
+
+                            <h3 class="lh-lg"><b>Balanced diet:</b></h3>
+                            <p class="lh-lg">
+                                Offer a balanced diet that includes a combination of forage and concentrates,
+                                such as grains or commercial feeds.
+                                Choose feeds that are appropriate for your horse's age,
+                                breed, workload, and any specific dietary requirements.</p>
+
+                            <h3 class="lh-lg"><b>Feeding Schedule:</b></h3>
+                            <p class="lh-lg">Feed your horse small, frequent meals throughout the day to
+                                promote healthy digestion and prevent digestive issues
+                                like colic or gastric ulcers.Avoid large meals or long periods without food.</p>
+
+                            <h3 class="lh-lg"><b>Regular exercise:</b></h3>
+                            <p class="lh-lg">Provide regular exercise and turnout for your
+                                horse to maintain muscle tone,
+                                cardiovascular fitness, and mental well-being.
+                                Incorporate a variety of activities such as riding,
+                                lunging, or turnout in a safe and suitable environment.</p>
+
+                            <h3 class="lh-lg"><b>Vet checks:</b></h3>
+                            <p class="lh-lg">Schedule routine veterinary check-ups, vaccinations,
+                                and preventive care to monitor your horse's health and address any issues promptly.
+                                Discuss your horse's nutritional needs and management with your
+                                veterinarian to ensure optimal health and well-being.</p>
+
+                            <h3 class="lh-lg"><b>Social Interaction:</b></h3>
+                            <p class="lh-lg">Horses are social animals and thrive on companionship.
+                                Provide opportunities for social interaction with other horses through turnout
+                                or paddock buddies to reduce stress and promote mental stimulation. </p>
+                            </p>
+
+                            <div class="row mx-auto">
+                                <div class="col lh-lg">
+                                    <p><em> Follow these simple steps and regain your horses health!
+                                            Or for more advice contact your local vet.
+                                        </em></p>
+                                </div>
+                                <div class="col">
+                                    <img class="rounded mx-auto d-block" src="/assets/images/multi-horse.jpg"
+                                        id="healthyHorse">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Back
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Overweight Modal-->
+        <div class="modal fade" id="overModal" tabindex="-1" aria-labelledby="overModalLabel" aria-hidden="true">
+            
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content fs-5 lh-sm"><button type="button"
+                    class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="overModalLabel"><img class="rounded mx-auto d-block"
+                                src="/assets/images/icecream-icon.png" id="iceCreamIcon"
+                                alt="Cute cartoon horse with ice cream">
+                            Our top tips for looking after
+                            an overweight horse:
+                        </h1>
+                    </div>
+
+                    <div class="modal-body">
+                        <h3 class="lh-lg">
+                            <b>Assess:</b></h4>
+                            <p class="lh-lg">
+                                Evaluate the horse's body condition score (BCS) to determine the
+                                severity
+                                of underweight.
+                                Look for signs of malnutrition such as prominent ribs, hip bones, and a
+                                lack of muscle tone.</p>
+
+                            <h3 class="lh-lg"><b>Forage:</b></h3>
+                            <p class="lh-lg">
+                                Provide high-quality forage such as grass hay or alfalfa to meet the
+                                horse's basic nutritional needs.
+                                Ensure the forage is free from mold, dust, and contaminants that could
+                                cause digestive issues.</p>
+
+                            <h3 class="lh-lg">
+                                <b>Supplements:</b>
+                            </h3>
+                            <p class="lh-lg">
+                                Supplement the horse's diet with concentrates such as grain or
+                                commercial
+                                feed designed for underweight horses.
+                                Choose feeds high in protein, fat, and easily digestible carbohydrates
+                                to
+                                support weight gain and muscle development.</p>
+
+                            <h3 class="lh-lg"><b>Feed Small & Frequent Meals:</b></h3>
+                            <p class="lh-lg">Divide the horse's daily ration into several small meals to promote
+                                efficient digestion and nutrient absorption.
+                                Avoid overfeeding or sudden increases in feed volume to prevent
+                                digestive
+                                upset.</p>
+
+                            <h3 class="lh-lg"><b>Monitor Weight:</b></h3>
+                            <p class="lh-lg"> Weigh the horse regularly to track progress and adjust feeding
+                                accordingly.
+                                Aim for gradual weight gain of 1-2 pounds per day to avoid metabolic
+                                issues associated with rapid weight gain.</p>
+
+                            <h3 class="lh-lg"><b>Dental Care:</b></h3>
+                            <p class="lh-lg"> Schedule regular dental exams and floating (rasping) as needed to
+                                maintain
+                                proper chewing and digestion.
+                                Dental issues can interfere with the horse's ability to eat and absorb
+                                nutrients effectively.</p>
+
+                            <h3 class="lh-lg"><b>Parasite Control:</b></h3>
+                            <p class="lh-lg">Implement a regular deworming program as recommended by your
+                                veterinarian
+                                to control internal parasites.
+                                Parasite infestations can contribute to weight loss and poor condition
+                                in
+                                horses.</p>
+
+                            <h3 class="lh-lg"><b>Exercise and Turnout:</b></h3>
+                            <p class="lh-lg"> Incorporate regular exercise and turnout into the horse's routine to
+                                promote muscle development and overall fitness.
+                                Gradually increase exercise intensity as the horse gains weight and
+                                strength.</p>
+                            </p>
+
+                            <div class="row mx-auto">
+                                <div class="col lh-lg">
+                                    <p><em> Follow these simple steps and regain your horses health!
+                                            Or for more advice contact your local vet.
+                                        </em></p>
+                                </div>
+                                <div class="col">
+                                    <img class="rounded mx-auto d-block" src="/assets/images/two-horse.png"
+                                        id="healthyHorse">
+                                </div>
+                            </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Back
+                        </button>
                     </div>
                 </div>
             </div>
