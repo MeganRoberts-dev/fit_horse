@@ -78,6 +78,17 @@ h1 {
 }
 
 /* CHECK HTML */
+.check-container {
+max-width: 800px;
+width: 100%;
+padding: 20px 23px 20px 23px;
+background-color: #ebe847;
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: medium;
+}
+
 .result {
     display: none;
     margin-top: 20px;
@@ -120,46 +131,71 @@ select {
     font-size: 50px;
 }
 /* ADVICE HTML */ 
-.col {
 
-}
-
-.container-1 {
-    max-width: 800px;
+.container-under {
+    max-width: 600px;
     width: 100%;
     padding: 20px 23px 20px 23px;
     background-color: #ebe847;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: larger;
+    
 
 }
-.container-2 {
-    max-width: 800px;
+.container-healthy {
+    max-width: 600px;
     width: 100%;
     padding: 20px 23px 20px 23px;
     background-color: #ebe847;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: larger;
+    
 
 }
-.container-3 {
-    max-width: 800px;
+.container-over {
+    max-width: 600px;
     width: 100%;
     padding: 20px 23px 20px 23px;
     background-color: #ebe847;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: larger;
 
 }
-#modalInfo{
+#underModal, #manageModal, #overModal{
 background-color: #67216c;
 }
-#cute-icon { 
+#sleepingIcon { 
     max-width: 100%;
     width: 200px;
     height: 200px;
    
 }
+#unicornIcon { 
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+   
+}
+#iceCreamIcon { 
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+   
+}
+#healthyHorse {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    
+}
+@media only screen and (max-width: 400px) {
+    .modal {
+      flex-direction: column;
+    }
+  }
