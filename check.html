@@ -53,10 +53,20 @@
             <a class="navbar-brand" href="#">
                 <img class="logo" src="assets/images/jumping-icon.png" alt="Fit Horse logo" id="image">
             </a>
+            <p id="result"></p>
+                    <p id="bmiResult"></p>
+                    <p id="bmiInfo"></p>
+                   
         </div>
         <div class="calculator text-center">
             <!--- Info  button -->
-            <i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalInfo"></i>
+            <i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalInfo" id="modalInfo"></i> 
+            <div id="results-link" style="display: none;">
+                        <p>
+                          For information and advice click
+                          <a id="adviceBtn" href="advice.html">here</a>
+                        </p>
+                      </div>
             <!-- Modal -->
             <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -66,10 +76,10 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                           <h3>Heartgirth:</h3> 
-                           <p>...</p>
-                           <h3>Length:</h3> 
-                           <p>...</p>
+                            <h3>Heartgirth:</h3>
+                            <p>...</p>
+                            <h3>Length:</h3>
+                            <p>...</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -86,20 +96,16 @@
                     <label for="length">Length (in inches):</label>
                     <input type="number" id="length" placeholder="Enter length" required>
                     <div class="text-center">
-                        <!-- <button class="pushable" id="playButton" type="submit" disabled>
-                            <span class="shadow"></span>
-                            <span class="edge"></span>
-                            <span class="front"> Go </span>
-                        </button> -->
-                    </div>
-                    <p id="result"></p>
-                    <p id="bmiResult"></p>
-                    <p id="bmiInfo"></p>
-                </div>
 
+                    </div>
+                    
+                </div>
+                <button class="pushable" id="reset">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front"> Try again </span></button>
             </div>
-            <button id="reset">Reset</button>
-        </div>
+            
     </main>
 
 
@@ -111,4 +117,5 @@
         crossorigin="anonymous"></script>
     <script src="assets/javascript/script.js"></script>
 </body>
+
 </html>
