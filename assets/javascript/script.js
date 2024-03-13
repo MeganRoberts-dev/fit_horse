@@ -5,7 +5,8 @@ let lengthInput = document.getElementById('length');
 let result = document.getElementById('result');
 let weightKg, heartGirth, length = 0;
 let heartGirthValid, lengthValid = false;
-
+let resultsLink = document.getElementById("results-link");
+let modalInfo = document.getElementById("modalInfo");
 
 function calculateWeight() {
 
@@ -14,18 +15,31 @@ function calculateWeight() {
 
     // Display result
     result.innerText = "Horse's Weight: " + Math.floor(weightKg) + " kg";
+
+    
     
     if (weightKg >= 800) {
         horseImage.src = "assets/images/fat-horse.png";
+     result.innerText += "\nYour horse is overweight.";
+     informationButton.innerText = "Overweight Information";
     } else if (weightKg >= 600) {
         horseImage.src = "assets/images/healthy-horse.png";
+        result.innerText += "\nYour horse is a healthy weight";
+        
     } else if (weightKg >= 300) {
         horseImage.src = "assets/images/skinny-horse.png";
-    } else if (weightKg >= 0) {
-        horseImage.src = "assets/images/horse-jump.png";
+        result.innerText += "\nYour horse is underweight";
+    } else if (weightKg >= 150) {
+        horseImage.src = "assets/images/jumping-icon";
+        result.innerText += "\nYour horse is healthy for it's small size.";
+       
     } else {
-        horseImage.src = "assets/images/horse-jump.png";
+        horseImage.src = "assets/images/jumping-icon.png";
+        result.innerText += "\nPlease enter vaild results";
+
     }
+    resultsLink.style.display = "inline"; 
+    modalInfo.style.display = "none";
 }
 
 // playButton.addEventListener("click", function (e) {
