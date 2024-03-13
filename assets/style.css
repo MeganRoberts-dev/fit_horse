@@ -36,6 +36,11 @@ h1 {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
 }
+a {
+ text-decoration: none !important;
+ color: inherit;
+}
+
 /* Navbar */
 .navbar-nav{
     font-weight: 800;
@@ -57,7 +62,6 @@ h1 {
 .pushable {
   background: #5a7722 ;
   border-radius: 15px;
-  box-shadow:  #beb135 0 10px 20px -10px;
   box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
@@ -75,8 +79,12 @@ h1 {
   word-break: break-word;
   border: 0;
   margin-top: 5px;
+  
 }
 
+button:hover {
+    font-size: x-large;
+}
 /* CHECK HTML */
 .check-container {
 max-width: 800px;
@@ -129,6 +137,9 @@ select {
 .bi-info-circle {
     cursor: pointer;
     font-size: 50px;
+}
+#adviceBtn {
+    color: green;
 }
 /* ADVICE HTML */ 
 
@@ -188,7 +199,7 @@ background-color: #67216c;
     height: 200px;
    
 }
-#healthyHorse {
+#multiHorse {
     max-width: 100%;
     width: 200px;
     height: 200px;
