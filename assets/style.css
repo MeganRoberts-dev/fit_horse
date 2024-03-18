@@ -86,8 +86,9 @@ button:hover {
     font-size: x-large;
 }
 /* CHECK HTML */
-.check-container {
+.calculator-container{
 max-width: 800px;
+
 width: 100%;
 padding: 20px 23px 20px 23px;
 background-color: #ebe847;
