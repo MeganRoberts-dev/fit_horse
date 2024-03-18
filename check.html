@@ -54,19 +54,19 @@
                 <img class="logo" src="assets/images/jumping-icon.png" alt="Fit Horse logo" id="image">
             </a>
             <p id="result"></p>
-                    <p id="bmiResult"></p>
-                    <p id="bmiInfo"></p>
-                   
+            <p id="bmiResult"></p>
+            <p id="bmiInfo"></p>
+
         </div>
         <div class="calculator text-center">
             <!--- Info  button -->
-            <i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalInfo" id="modalInfo"></i> 
+            <i class="bi bi-info-circle" data-bs-toggle="modal" data-bs-target="#modalInfo" id="modalInfo"></i>
             <div id="results-link" style="display: none;">
-                        <p>
-                          For information and advice click
-                          <a id="adviceBtn" href="advice.html">here</a>
-                        </p>
-                      </div>
+                <p>
+                    For information and advice click
+                    <a id="adviceBtn" href="advice.html">here</a>
+                </p>
+            </div>
             <!-- Modal -->
             <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -88,24 +88,73 @@
                 </div>
             </div>
             <!-- Input -->
-            <div class="check-container">
-                <div class="text-center">
-                    <h2>Calculate Horse's Weight</h2>
-                    <label for="heartgirth">Heartgirth (in inches):</label>
-                    <input type="number" id="heartgirth" placeholder="Enter heartgirth" required>
-                    <label for="length">Length (in inches):</label>
+            <div class="calculator-container">
+                <div class="calculator">
+                    <h2>Horse Weight Calculator</h2>
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <label for="heartgirth">Heart Girth:</label>
+                        </div>
+                        <div class="col">
+                            <input type="number" id="heartgirth" placeholder="Enter heart girth">
+                        </div>
+                        <div class="col">
+                            <select id="heartgirth_units">
+                                <option value="inches" selected>Inches</option>
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <label for="length">Body Length:</label>
+                        </div>
+                        <div class="col">
+                            <input type="number" id="length" placeholder="Enter body length">
+                        </div>
+                        <div class="col">
+                            <select id="length_units">
+                                <option value="inches" selected>Inches</option>
+                                <option value="cm">Centimeters</option>
+                                <option value="m">Meters</option>
+                            </select>
+                        </div>
+                    </div>
+                    <p id="result"></p>
+
+            </div><button class="pushable" id="reset">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front"> Try again </span></button>
+        </div>
+        </div>
+
+
+
+        <!--
+                    <label for="heartgirth">Heartgirth:</label>
+                    <input type="number" id="heartgirth" placeholder="Enter heartgirth" required><div class="dropdown">
+                    <label for="length">Length:</label>
                     <input type="number" id="length" placeholder="Enter length" required>
                     <div class="text-center">
-
-                    </div>
+                        <br>
+                        <label for="unit">Unit:</label>
+                        <select id="unit">
+                            <option value="inches" selected>Inches</option>
+                            <option value="centimeters">Centimeters</option>
+                        </select>
+                        <br>
+                        <button id="calculateBtn">Calculate</button>
+                        <button id="reset">Reset</button>
+                        <p id="result"></p>
                     
-                </div>
-                <button class="pushable" id="reset">
-                    <span class="shadow"></span>
-                    <span class="edge"></span>
-                    <span class="front"> Try again </span></button>
-            </div>
-            
+                    </div> -->
+
+
+
+
     </main>
 
 
