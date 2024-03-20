@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 let result = document.getElementById('result');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
