@@ -8,18 +8,19 @@ let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modalInfo");
 document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
 document.getElementById('length_units').addEventListener("change", calculateWeight);
-
+let calcCm = 0.393700787;
+let calcM = 39.3700787;
 
 function calculateWeight() {
     // Convert heart girth to inches
     heartGirth = parseFloat(heartGirthInput.value);
     switch (document.getElementById('heartgirth_units').value) {
         case 'cm':
-            heartGirth = heartGirth * 0.393700787;
+            heartGirth = heartGirth * calcCm;
             break;
 
         case 'm':
-            heartGirth = heartGirth * 39.3700787;
+            heartGirth = heartGirth * calcM;
             break;
     }
 
@@ -27,26 +28,25 @@ function calculateWeight() {
     length = parseFloat(lengthInput.value);
     switch (document.getElementById('length_units').value) {
         case 'cm':
-            length = length * 0.393700787;
+            length = length * calcCm;
             break;
 
         case 'm':
-            length = length * 39.3700787;
+            length = length * calcM;
             break;
     }
- // Your logic to calculate results and display them
- result.innerHTML = "Results displayed.";
-
- // Show the link
- resultsLink.style.display = "inline"; 
- modalInfo.style.display = "none";
-
- if (!heartGirth || !length) {
-    // Show modal info and original horse image
-    modalInfo.style.display = "inline";
-    horseImage.src = "assets/images/jumping-icon.png";
-    return;
+    updateResults();
 }
+
+function updateResults() {
+    // Your logic to calculate results and display them
+    result.innerHTML = "Results displayed.";
+
+    // Show the link
+    resultsLink.style.display = "inline";
+    modalInfo.style.display = "none";
+
+    
 
     // Calculate weight in kg
     weightKg = (heartGirth * heartGirth * length) / 330 / 2.20462; // Convert pounds to kg
@@ -54,26 +54,45 @@ function calculateWeight() {
 
     // Display result
     result.innerText = "Horse's Weight: " + Math.floor(weightKg) + " kg";
-
+    let weightCatagory;
     // Determine horse image based on weight
     if (weightKg >= 800) {
-        horseImage.src = "assets/images/fat-horse.png";
-        result.innerText += "\nYour horse is overweight.";
+        weightCatagory = 'overweight';
     } else if (weightKg >= 550) {
-        horseImage.src = "assets/images/healthy-horse.png";
-        result.innerText += "\nYour horse is a healthy weight";
+        weightCatagory = 'healthy';
     } else if (weightKg >= 250) {
-        horseImage.src = "assets/images/skinny-horse.png";
-        result.innerText += "\nYour horse is underweight";
+        weightCatagory = 'underweight';
     } else if (weightKg >= 50) {
-        horseImage.src = "assets/images/shetland.png";
-        result.innerText += "\nYour horse is healthy for its small size.";
-    } else  {
-        horseImage.src = "assets/images/laughing-icon.png";
-        result.innerText += "\nPlease enter valid results (weight must be at least 150 kg)";
-        return;
-    
+        weightCatagory = 'small';
+    } else {
+        weightCatagory = 'invalid';
     }
+    let img, txt;
+    switch (weightCatagory) {
+        case 'overweight':
+            img = "fat-horse";
+            txt = "\nYour horse is overweight.";
+            break;
+        case 'healthy':
+            img = "healthy-horse";
+            txt = "\nYour horse is a healthy weight";
+            break;
+        case 'underweight':
+            img = "skinny-horse";
+            txt = "\nYour horse is underweight";
+            break;
+        case 'small':
+            img = "shetland";
+            txt = "\nYour horse is healthy for its small size.";
+            break;
+        case 'invalid':
+            img = "laughing-icon";
+            txt = "\nPlease enter valid results (weight must be at least 150; kg)";
+            break;
+    }
+    horseImage.src = `assets/images/${img}.png`;
+    horseImage.alt = `image of ${weightCatagory} horse`;
+    result.innerText += txt;
 }
 
 // Listen to the user typing live in each input
@@ -111,11 +130,15 @@ function checkIfValid() {
         calculateWeight();
     } else {
         result.innerText = "";
+        // Show modal info and original horse image
+        modalInfo.style.display = "inline";
+        resultsLink.style.display = "none";
+        horseImage.src = "assets/images/jumping-icon.png";
     }
 }
 
 // reset button
-reset.addEventListener("click", function() {
+reset.addEventListener("click", function () {
     heartGirthInput.value = "";
     lengthInput.value = "";
     result.innerText = "";
