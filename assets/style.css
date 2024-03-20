@@ -179,7 +179,7 @@ select {
     font-size: larger;
 
 }
-#underModal, #manageModal, #overModal{
+#underModal, #healthyModal, #overModal{
 background-color: #67216c;
 }
 #sleepingIcon { 
