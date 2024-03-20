@@ -6,6 +6,9 @@ let weightKg, heartGirth, length = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modalInfo");
+document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
+document.getElementById('length_units').addEventListener("change", calculateWeight);
+
 
 function calculateWeight() {
     // Convert heart girth to inches
@@ -38,9 +41,16 @@ function calculateWeight() {
  resultsLink.style.display = "inline"; 
  modalInfo.style.display = "none";
 
+ if (!heartGirth || !length) {
+    // Show modal info and original horse image
+    modalInfo.style.display = "inline";
+    horseImage.src = "assets/images/jumping-icon.png";
+    return;
+}
+
     // Calculate weight in kg
     weightKg = (heartGirth * heartGirth * length) / 330 / 2.20462; // Convert pounds to kg
-   
+
 
     // Display result
     result.innerText = "Horse's Weight: " + Math.floor(weightKg) + " kg";
@@ -49,18 +59,20 @@ function calculateWeight() {
     if (weightKg >= 800) {
         horseImage.src = "assets/images/fat-horse.png";
         result.innerText += "\nYour horse is overweight.";
-    } else if (weightKg >= 600) {
+    } else if (weightKg >= 550) {
         horseImage.src = "assets/images/healthy-horse.png";
         result.innerText += "\nYour horse is a healthy weight";
-    } else if (weightKg >= 300) {
+    } else if (weightKg >= 250) {
         horseImage.src = "assets/images/skinny-horse.png";
         result.innerText += "\nYour horse is underweight";
-    } else if (weightKg >= 150) {
-        horseImage.src = "assets/images/jumping-icon";
+    } else if (weightKg >= 50) {
+        horseImage.src = "assets/images/shetland.png";
         result.innerText += "\nYour horse is healthy for its small size.";
-    } else {
-        horseImage.src = "assets/images/jumping-icon.png";
-        result.innerText += "\nPlease enter valid results";
+    } else  {
+        horseImage.src = "assets/images/laughing-icon.png";
+        result.innerText += "\nPlease enter valid results (weight must be at least 150 kg)";
+        return;
+    
     }
 }
 
@@ -101,10 +113,13 @@ function checkIfValid() {
         result.innerText = "";
     }
 }
+
 // reset button
 reset.addEventListener("click", function() {
     heartGirthInput.value = "";
     lengthInput.value = "";
     result.innerText = "";
-    icon.style.visibility = "visible"; // Show the icon again
+    modalInfo.style.display = "inline";
+    resultsLink.style.display = "none";
+    horseImage.src = "assets/images/jumping-icon.png";
 });
