@@ -1,4 +1,3 @@
-/* jshint esversion: 11 */
 let result = document.getElementById('result');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
@@ -89,7 +88,7 @@ function updateResults() {
             txt = "\nYour horse is healthy for its small size.";
             break;
         case 'invalid':
-            img = "mouse";
+            img = "laughing-icon";
             txt = "\nPlease enter valid results (weight must be at least 50kg)";
             break;
     }
@@ -134,7 +133,6 @@ function checkIfValid() {
     } else {
         result.innerText = "";
         // Show modal info and original horse image
-        modalInfo.style.display = "inline";
         resultsLink.style.display = "none";
         horseImage.src = "assets/images/jumping-icon.png";
     }
@@ -145,7 +143,7 @@ reset.addEventListener("click", function () {
     heartGirthInput.value = "";
     lengthInput.value = "";
     result.innerText = "";
-    modalInfo.style.display = "inline";
+    modalInfo.show();
     resultsLink.style.display = "none";
     horseImage.src = "assets/images/jumping-icon.png";
 });
