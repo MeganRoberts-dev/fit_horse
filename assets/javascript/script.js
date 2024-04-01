@@ -12,6 +12,8 @@ document.getElementById('length_units').addEventListener("change", calculateWeig
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 
+
+//* Calculator functions *//
 function calculateWeight() {
     // Convert heart girth to inches
     heartGirth = parseFloat(heartGirthInput.value);
@@ -54,7 +56,7 @@ function updateResults() {
 
 
     // Display result
-    result.innerText = "Horse's Weight: " + Math.floor(weightKg) + " kg";
+    result.innerText =  + Math.floor(weightKg) + " kg";
     let weightCatagory;
     // Determine horse image based on weight
     if (weightKg >= 800) {
@@ -87,8 +89,8 @@ function updateResults() {
             txt = "\nYour horse is healthy for its small size.";
             break;
         case 'invalid':
-            img = "laughing-icon";
-            txt = "\nPlease enter valid results (weight must be at least 150; kg)";
+            img = "mouse";
+            txt = "\nPlease enter valid results (weight must be at least 50kg)";
             break;
     }
     horseImage.src = `assets/images/${img}.png`;
