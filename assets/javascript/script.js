@@ -48,11 +48,8 @@ function updateResults() {
     resultsLink.style.display = "inline";
     modalInfo.style.display = "none";
 
-    
-
     // Calculate weight in kg
     weightKg = (heartGirth * heartGirth * length) / 330 / 2.20462; // Convert pounds to kg
-
 
     // Display result
     result.innerText =  + Math.floor(weightKg) + " kg";
@@ -102,7 +99,6 @@ heartGirthInput.addEventListener("input", getHeartGirth);
 lengthInput.addEventListener("input", getLength);
 
 function getHeartGirth() {
-    // grabs the value of the heartGirth based on user input
     heartGirth = heartGirthInput.value;
     if (heartGirthInput.value == "") {
         heartGirth = 0;
@@ -130,11 +126,13 @@ function getLength() {
 function checkIfValid() {
     if (heartGirthValid && lengthValid) {
         calculateWeight();
+        modalInfo.style.display = "none";
     } else {
         result.innerText = "";
         // Show modal info and original horse image
         resultsLink.style.display = "none";
         horseImage.src = "assets/images/jumping-icon.png";
+        modalInfo.style.display = "";
     }
 }
 
@@ -143,7 +141,6 @@ reset.addEventListener("click", function () {
     heartGirthInput.value = "";
     lengthInput.value = "";
     result.innerText = "";
-    modalInfo.show();
     resultsLink.style.display = "none";
     horseImage.src = "assets/images/jumping-icon.png";
 });
