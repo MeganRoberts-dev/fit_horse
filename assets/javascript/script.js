@@ -10,10 +10,9 @@ document.getElementById('heartgirth_units').addEventListener("change", calculate
 document.getElementById('length_units').addEventListener("change", calculateWeight);
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
-
 const icons = document.querySelectorAll('.logo');
 
-// Add hover effect to each icon
+//* Add hover effect to each icon
 icons.forEach(icon => {
     icon.addEventListener('mouseenter', () => {
         // Add class to trigger animation
@@ -55,17 +54,15 @@ function calculateWeight() {
 }
 
 function updateResults() {
-    // Your logic to calculate results and display them
+    // Displays for result
     result.innerHTML = "Results displayed.";
-
-    // Show the link
     resultsLink.style.display = "inline";
     modalInfo.style.display = "none";
 
     // Calculate weight in kg
     weightKg = (heartGirth * heartGirth * length) / 330 / 2.20462; // Convert pounds to kg
 
-    // Display result
+    // Result
     result.innerText =  + Math.floor(weightKg) + " kg";
     let weightCatagory;
     // Determine horse image based on weight
@@ -120,6 +117,7 @@ heartGirthInput.addEventListener("input", getHeartGirth);
 lengthInput.addEventListener("input", getLength);
 
 function getHeartGirth() {
+     // grab the value of the heartgirth based on user input
     heartGirth = heartGirthInput.value;
     if (heartGirthInput.value == "") {
         heartGirth = 0;
@@ -132,7 +130,7 @@ function getHeartGirth() {
 }
 
 function getLength() {
-    // grabs the value of the length based on user input
+    // grab the value of the length based on user input
     length = lengthInput.value;
     if (lengthInput.value == "") {
         length = 0;
@@ -145,6 +143,7 @@ function getLength() {
 }
 
 function checkIfValid() {
+     // grab the value of both varibales based on user input
     if (heartGirthValid && lengthValid) {
         calculateWeight();
         modalInfo.style.display = "none";
