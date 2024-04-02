@@ -11,6 +11,20 @@ document.getElementById('length_units').addEventListener("change", calculateWeig
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 
+const icons = document.querySelectorAll('.logo');
+
+// Add hover effect to each icon
+icons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+        // Add class to trigger animation
+        icon.classList.add('jiggle');
+    });
+
+    icon.addEventListener('mouseleave', () => {
+        // Remove class to stop animation
+        icon.classList.remove('jiggle');
+    });
+});
 
 //* Calculator functions *//
 function calculateWeight() {
@@ -55,7 +69,10 @@ function updateResults() {
     result.innerText =  + Math.floor(weightKg) + " kg";
     let weightCatagory;
     // Determine horse image based on weight
-    if (weightKg >= 800) {
+    if (weightKg >=1000) {
+        weightCatagory = 'elephant';
+    }
+    else if (weightKg >= 850) {
         weightCatagory = 'overweight';
     } else if (weightKg >= 550) {
         weightCatagory = 'healthy';
@@ -68,6 +85,10 @@ function updateResults() {
     }
     let img, txt;
     switch (weightCatagory) {
+        case 'elephant':
+            img = "elephant";
+            txt = "\nUmm..do you own an elephant?";
+            break;
         case 'overweight':
             img = "fat-horse";
             txt = "\nYour horse is overweight.";
