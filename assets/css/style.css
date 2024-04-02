@@ -40,7 +40,21 @@ a {
  text-decoration: none !important;
  color: inherit;
 }
+.logo:hover {
+    animation: jiggle 0.5s ease-in-out infinite;
+}
 
+@keyframes jiggle {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
 /* Navbar */
 .navbar-nav{
     font-weight: 800;
@@ -137,36 +151,24 @@ select {
     color: green;
 }
 /* ADVICE HTML */ 
-.container-under {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px 23px 20px 23px;
-    background-color: #ebe847;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: larger;
-}
-.container-healthy {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px 23px 20px 23px;
-    background-color: #ebe847;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: larger;
-}
+.container-under,
+.container-healthy,
 .container-over {
     max-width: 600px;
     width: 100%;
-    padding: 20px 23px 20px 23px;
+    padding: 20px 23px;
     background-color: #ebe847;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     font-size: larger;
+    transition: transform 0.3s ease; 
+}
 
+.container-under:hover,
+.container-healthy:hover,
+.container-over:hover {
+    transform: scale(1.05); 
 }
 #underModal, #healthyModal, #overModal{
 background-color: #67216c;
