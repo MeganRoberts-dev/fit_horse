@@ -67,7 +67,7 @@ a {
     padding: 20px 23px 20px 23px;
     background-color:#ebe847;
     border-radius: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 
 }
 /* Button */
@@ -94,17 +94,22 @@ a {
   
 }
 
-button:hover {
-    font-size: x-large;
+.pushable:hover {
+    font-size: large;
 }
 /* CALCULATOR HTML */
+.img-thumbnail {
+height: 250px;
+width: 330px;
+}
+
 .calculator-container{
 max-width: 800px;
 width: 100%;
 padding: 20px 23px 20px 23px;
 background-color: #ebe847;
 border-radius: 15px;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 cursor: pointer;
 font-size: medium;
 }
@@ -159,7 +164,7 @@ select {
     padding: 20px 23px;
     background-color: #ebe847;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     font-size: larger;
     transition: transform 0.3s ease; 
