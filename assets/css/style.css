@@ -6,7 +6,7 @@
 body {
     font-family: sans-serif;
     background: url(../images/grass.jpg);
-    background-size: 1500px  1500px;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -168,6 +168,7 @@ select {
     cursor: pointer;
     font-size: larger;
     transition: transform 0.3s ease; 
+    margin: 0.5rem;
 }
 
 .container-under:hover,

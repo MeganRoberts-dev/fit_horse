@@ -1,11 +1,12 @@
 let result = document.getElementById('result');
+let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
-let lengthInput = document.getElementById('length');
-let weightKg, heartGirth, length = 0;
+let lengthInput = document.getElementById('bodyLength');
+let weightKg, heartGirth, bodyLength = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
-let modalInfo = document.getElementById("modalInfo");
+let modalInfo = document.getElementById("modal");
 document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
 document.getElementById('length_units').addEventListener("change", calculateWeight);
 let calcCm = 0.393700787;
@@ -163,4 +164,5 @@ reset.addEventListener("click", function () {
     result.innerText = "";
     resultsLink.style.display = "none";
     horseImage.src = "assets/images/jumping-icon.png";
+    modalInfo.style.display = 'block';
 });
