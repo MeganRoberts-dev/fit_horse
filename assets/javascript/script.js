@@ -1,3 +1,4 @@
+
 let result = document.getElementById('result');
 let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
@@ -7,11 +8,13 @@ let weightKg, heartGirth, bodyLength = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modal");
+let myVideoPlayer = document.getElementById("myVideoPlayer");
 document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
 document.getElementById('length_units').addEventListener("change", calculateWeight);
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 const icons = document.querySelectorAll('.logo');
+
 
 //* Add hover effect to each icon
 icons.forEach(icon => {
@@ -24,6 +27,17 @@ icons.forEach(icon => {
         // Remove class to stop animation
         icon.classList.remove('jiggle');
     });
+});
+
+// Function to stop video when modal is closed
+function stopVideo() {
+    myVideoPlayer.pause();
+    myVideoPlayer.currentTime = 0;
+}
+
+// Event listener for modal close event
+modalInfo.addEventListener('hidden.bs.modal', function () {
+    stopVideo();
 });
 
 //* Calculator functions *//
@@ -115,7 +129,7 @@ function updateResults() {
 
 // Listen to the user typing live in each input
 heartGirthInput.addEventListener("input", getHeartGirth);
-lengthInput.addEventListener("input", getLength);
+
 
 function getHeartGirth() {
      // grab the value of the heartgirth based on user input

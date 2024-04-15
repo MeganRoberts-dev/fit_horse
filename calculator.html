@@ -68,21 +68,23 @@
         </div>
         <!-- Modal -->
         <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">How to get measurments</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img class="img-thumbnail" src="assets/images/diagram.png" alt="Diagram how to measure a horses weight" id="image">
+                      
+                        <iframe id="myVideoPlayer" width="100%" height="350" src="https://www.youtube.com/embed/Xo70mDNj7b0" frameborder="0" autoplay=1 allowfullscreen></iframe>
+                        
                         <h4>Heartgirth:</h4>
                         <p>Measure the circumference of the chest just behind the withers using a flexible measuring tape.</p>
                         <h4>Length:</h4>
                         <p>Use a measuring tape or ruler to determine the distance from furthest point of the shoulder to the point of the buttock.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cool.</button>
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok</button>
                     </div>
                 </div>
             </div>
@@ -109,10 +111,10 @@
                 <br>
                 <div class="row align-items-center">
                     <div class="col">
-                        <label for="length">Body Length:</label>
+                        <label for="bodyLength">Body Length:</label>
                     </div>
                     <div class="col">
-                        <input type="number" id="length" placeholder="Enter body length">
+                        <input type="number" id="bodyLength" placeholder="Enter body length">
                     </div>
                     <div class="col">
                         <select id="length_units">
