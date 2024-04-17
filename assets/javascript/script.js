@@ -81,7 +81,7 @@ function updateResults() {
     result.innerText =  + Math.floor(weightKg) + " kg";
     let weightCatagory;
     // Determine horse image based on weight
-    if (weightKg >=1000) {
+    if (weightKg >=1500) {
         weightCatagory = 'elephant';
     }
     else if (weightKg >= 850) {
@@ -99,7 +99,7 @@ function updateResults() {
     switch (weightCatagory) {
         case 'elephant':
             img = "elephant";
-            txt = "\nUmm..do you own an elephant?";
+            txt = "\nAn elephant?";
             break;
         case 'overweight':
             img = "fat-horse";
@@ -107,11 +107,11 @@ function updateResults() {
             break;
         case 'healthy':
             img = "healthy-horse";
-            txt = "\nYour horse is a healthy weight";
+            txt = "\nYour horse is a healthy weight.";
             break;
         case 'underweight':
             img = "skinny-horse";
-            txt = "\nYour horse is underweight";
+            txt = "\nYour horse is underweight.";
             break;
         case 'small':
             img = "shetland";
@@ -119,7 +119,7 @@ function updateResults() {
             break;
         case 'invalid':
             img = "laughing-icon";
-            txt = "\nPlease enter valid results (weight must be at least 50kg)";
+            txt = "\nPlease enter valid results (weight must be at least 50kg).";
             break;
     }
     horseImage.src = `assets/images/${img}.png`;
@@ -129,6 +129,7 @@ function updateResults() {
 
 // Listen to the user typing live in each input
 heartGirthInput.addEventListener("input", getHeartGirth);
+lengthInput.addEventListener ("input", getLength)
 
 
 function getHeartGirth() {

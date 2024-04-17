@@ -155,6 +155,9 @@ select {
 #adviceBtn {
     color: green;
 }
+#adviceBtn:hover {
+    font-size: large;
+}
 /* ADVICE HTML */ 
 .container-under,
 .container-healthy,
