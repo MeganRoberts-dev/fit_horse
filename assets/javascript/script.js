@@ -5,7 +5,7 @@ let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
 let lengthInput = document.getElementById('bodyLength');
-let weightKg, heartGirth, length = 0;
+let weightKg, heartGirth, bodyLength = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modal");
@@ -14,6 +14,7 @@ document.getElementById('length_units').addEventListener("change", calculateWeig
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 const icons = document.querySelectorAll('.logo');
+
 
 //* Add hover effect to each icon
 icons.forEach(icon => {
@@ -38,7 +39,6 @@ $(document).ready(function() {
         $iframe.attr('src', src);
     });
 });
-
 //* Calculator functions *//
 function calculateWeight() {
     // Convert heart girth to inches
@@ -54,7 +54,7 @@ function calculateWeight() {
     }
 
     // Convert length to inches
-   length = parseFloat(lengthInput.value);
+    length = parseFloat(lengthInput.value);
     switch (document.getElementById('length_units').value) {
         case 'cm':
             length = length * calcCm;
