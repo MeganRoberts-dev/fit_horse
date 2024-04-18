@@ -5,7 +5,7 @@ let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
 let lengthInput = document.getElementById('bodyLength');
-let weightKg, heartGirth = 0;
+let weightKg, heartGirth, length = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modal");
@@ -54,7 +54,7 @@ function calculateWeight() {
     }
 
     // Convert length to inches
-   let length = parseFloat(lengthInput.value);
+   length = parseFloat(lengthInput.value);
     switch (document.getElementById('length_units').value) {
         case 'cm':
             length = length * calcCm;
@@ -146,7 +146,7 @@ function getHeartGirth() {
 
 function getLength() {
     // grab the value of the length based on user input
-   let length = lengthInput.value;
+    length = lengthInput.value;
     if (lengthInput.value == "") {
         length = 0;
         lengthValid = false;
