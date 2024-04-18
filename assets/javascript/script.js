@@ -1,20 +1,19 @@
-
+/* global $ */
+/* jshint esversion: 11 */
 let result = document.getElementById('result');
 let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
 let lengthInput = document.getElementById('bodyLength');
-let weightKg, heartGirth, bodyLength = 0;
+let weightKg, heartGirth = 0;
 let heartGirthValid, lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modal");
-let myVideoPlayer = document.getElementById("myVideoPlayer");
 document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
 document.getElementById('length_units').addEventListener("change", calculateWeight);
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 const icons = document.querySelectorAll('.logo');
-
 
 //* Add hover effect to each icon
 icons.forEach(icon => {
@@ -28,16 +27,16 @@ icons.forEach(icon => {
         icon.classList.remove('jiggle');
     });
 });
-
-// Function to stop video when modal is closed
-function stopVideo() {
-    myVideoPlayer.pause();
-    myVideoPlayer.currentTime = 0;
-}
-
-// Event listener for modal close event
-modalInfo.addEventListener('hidden.bs.modal', function () {
-    stopVideo();
+//* Stop iframe video playing when modal is closes *//
+$(document).ready(function() {
+    $('#modalInfo').on('hidden.bs.modal', function (e) {
+        // Find the iframe within the modal
+        var $iframe = $(this).find("iframe");
+        var src = $iframe.attr('src');
+        // Pause the video by removing the source
+        $iframe.attr('src', '');
+        $iframe.attr('src', src);
+    });
 });
 
 //* Calculator functions *//
@@ -55,7 +54,7 @@ function calculateWeight() {
     }
 
     // Convert length to inches
-    length = parseFloat(lengthInput.value);
+   let length = parseFloat(lengthInput.value);
     switch (document.getElementById('length_units').value) {
         case 'cm':
             length = length * calcCm;
@@ -99,7 +98,7 @@ function updateResults() {
     switch (weightCatagory) {
         case 'elephant':
             img = "elephant";
-            txt = "\nAn elephant?";
+            txt = "\nIs that an elephant?";
             break;
         case 'overweight':
             img = "fat-horse";
@@ -129,7 +128,7 @@ function updateResults() {
 
 // Listen to the user typing live in each input
 heartGirthInput.addEventListener("input", getHeartGirth);
-lengthInput.addEventListener ("input", getLength)
+lengthInput.addEventListener ("input", getLength);
 
 
 function getHeartGirth() {
@@ -147,7 +146,7 @@ function getHeartGirth() {
 
 function getLength() {
     // grab the value of the length based on user input
-    length = lengthInput.value;
+   let length = lengthInput.value;
     if (lengthInput.value == "") {
         length = 0;
         lengthValid = false;
