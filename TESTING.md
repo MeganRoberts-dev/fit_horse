@@ -1,4 +1,5 @@
 # Testing
+> [!NOTE]
 > Return back to the [README.md](README.md) file.
 
 ## Code Validation
@@ -77,8 +78,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
     - ![screenshot](documentation/bugs/video-bug-1.png)
     - ![screenshot](documentation/bugs/video-bug-2.png)
-   
-
 
     - To fix this, I used `console log` to identify the issue and changed the langauge to Jquary shown below.
     - ![screenshot](documentation/bugs/bug-vid-3.png)
@@ -95,9 +94,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
     - To fix this, I used https://compresspng.com/ to convert the images to help with loading speed and lighthouse audit results.
 
-
-
-## Unfixed Bugs
+> [!WARNING]  
+> ## Unfixed Bugs
 ### Version Control / Commits
 
 I originally started my project using "past-tense" verbs in my commit message, however, after speaking with my mentor, we discussed the appropriate way of using the "imperative mood" for commits.

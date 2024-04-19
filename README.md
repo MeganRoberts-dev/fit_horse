@@ -64,7 +64,6 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 |  ![screenshot](documentation/wireframe/desktop-wireframe.png)   | ![screenshot](documentation/wireframe/tablet-wireframe.png)  |![screenshot](documentation/wireframe/mobile-wireframe.png) |
 
 
-
 ## Features
 ### Existing Features
 
@@ -99,8 +98,8 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 ![screenshot](documentation/features/advice-section.png)
 ![screenshot](documentation/features/advice-modal.png)
 
-
-### Future Features
+> [!TIP]  
+> ### Future Features
 
 - INTERPERSONAL-ICON
     - In the future I would like the cartoon icon to be more interactive and move around the site acting as a guide for users. For example, I would have him waving on the landing page and clapping when the results are given. I believe this would make the site more interpersonal for users. 
@@ -123,11 +122,11 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
 
 ## Testing
-
-
+> [!NOTE]
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
-## Deployment
+> [!IMPORTANT]  
+> ## Deployment
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
@@ -154,7 +153,8 @@ You can clone the repository by following these steps:
 	- `git clone https://github.com/MeganRoberts-dev/fit_horse.git`
 7. Press Enter to create your local clone.
 
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+> [!TIP]  
+> Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MeganRoberts-dev/fit_horse)
 
@@ -196,6 +196,7 @@ You can fork this repository by using the following steps:
 | [Youtube](https://www.youtube.com/watch?v=Xo70mDNj7b0) | Information modal | Video | Video explaining how to get measurements |
 | [Bootstrap icons](https://icons.getbootstrap.com/) | Information icon | Icon | Information toggle
 | [Compresspng](https://compresspng.com/) | Entire site | Images | Used for compressing image sizes
+
 ### Acknowledgements
 
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their excellent moduale teaching.
