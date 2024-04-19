@@ -125,22 +125,21 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 > [!NOTE]
 > For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
+## Deployment
 > [!IMPORTANT]  
-> ## Deployment
+>The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
-The site was deployed to GitHub Pages. The steps to deploy are as follows:
-
-- In the [GitHub repository](https://github.com/MeganRoberts-dev/fit_horse), navigate to the Settings tab 
+ In the [GitHub repository](https://github.com/MeganRoberts-dev/fit_horse), navigate to the Settings tab 
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found [here](https://meganroberts-dev.github.io/fit_horse)
 
-### Local Deployment
+> ### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
 
-#### Cloning
+> #### Cloning
 
 You can clone the repository by following these steps:
 
@@ -161,7 +160,7 @@ You can clone the repository by following these steps:
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-#### Forking
+> #### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
@@ -198,8 +197,8 @@ You can fork this repository by using the following steps:
 | [Compresspng](https://compresspng.com/) | Entire site | Images | Used for compressing image sizes
 
 ### Acknowledgements
-
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their excellent moduale teaching.
-- I would like to especially thank my fantastic Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his unwavering support, encouragment and invaluable adivce throughout the enjoyable development of this project.
-- Lastly would like to thank my brilliant Code Institue cohort facilitator, [Amy Richardson](https://code-institute-room.slack.com/team/U06CZC2JZTN) for her kind words and inspiration. 
+> [!IMPORTANT]  
+>  I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their excellent moduale teaching.
+> I would like to especially thank my fantastic Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his unwavering  support, encouragment and invaluable adivce throughout the enjoyable development of this project.
+>Lastly would like to thank my brilliant Code Institue cohort facilitator, [Amy Richardson](https://code-institute-room.slack.com/team/U06CZC2JZTN) for her kind words and inspiration. 
 
