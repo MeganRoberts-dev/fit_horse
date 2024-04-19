@@ -70,7 +70,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | As a new site user, I would like to gain knowledge on how to imporve my horses health based on the results I recieved, so that I can become a better equestrian owner.| ![screenshot](documentation/features/advice-modal.png) |
 | As a new site user, I would like to use a restart button, incase I have multiple horses' weights to check.| ![screenshot](documentation/features/try-again-button.png) 
 | As a returning site user, I would like to reuse the calculator with different measurments, so that I can have different results. | ![screenshot](documentation/features/calculator.png) |
-| As a returning site user, I would like to quickly and easily access the advice I need it without having to run the calculator, so that I can use it as guide. | ![screenshot](documentation/responsiveness/desktop-advice.png) |
+| As a returning site user, I would like easily use the advice section without using the calculator, so that I can use it as guide. | ![screenshot](documentation/responsiveness/desktop-advice.png) |
 
 ## Bugs
 
@@ -96,10 +96,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 > [!WARNING]  
 > ## Unfixed Bugs
-### Version Control / Commits
-
-I originally started my project using "past-tense" verbs in my commit message, however, after speaking with my mentor, we discussed the appropriate way of using the "imperative mood" for commits.
-
 ### Calculator Video Speed / Low Lighthouse Audit
 
 I am aware the response speed on the calculator page relating to the informative youtube video is not of satisfactory time, effecting the lighthouse audit result. Multiple steps were taken to resolve this for example, adding a Lazy load third-party resource or using a Lite youtube embed, for example "<lite-youtube videoid="{{ latestSomeAntics.id }}" playlabel="Play {{ latestSomeAntics.title }}"></lite-youtube>". I believe they did not work due to my limited experience. Lastly I had tried using Jquary, however after extensinve reasreaching, found it adds additional overhead to web pages, therefore I did not choose this option either.

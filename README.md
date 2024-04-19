@@ -11,11 +11,11 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://meganroberts-de
 
 # Website Overview
 
-At Fit Horse, we're not horsing around when it comes to your equine companion's health and fitness. Our innovative tool calculates your horse's weight with precision, providing you with valuable insights and personalized advice to keep your four-legged friend in top shape. We understand that your horse's well-being is paramount, which is why we've developed a user-friendly platform that takes the guesswork out of equine care. Whether you're a seasoned equestrian or a first-time owner, our commitment to accuracy and excellence ensures that you have the tools and knowledge to nurture a strong, vibrant bond with your horse. Join us on this journey toward optimal health and vitality for your equine partner!
+Welcome to Fit Horse - equine fitness revolutionized! A go-to destination for unlocking the secrets of your horse's BMI (Body Mass Index). Gone are the days of uncertainty about your horse's health! Our cutting-edge calculator will discover the precise BMI of your equine companion AND offer a gateway of personalized health insights and expert advice designed specifically for your horse's unique needs. Whether you're a seasoned showjumper or a novice in the world of horse care, our platform empowers you with the knowledge and tools to optimize your horse's well-being. So what are you waiting for?
 
 ## UX
 
-The design approach aimed at seamlessly blending functionality with aesthetics. The serene grass background and inclusion of a charming cartoon horse icon, gracefully following users across each page, adds a delightful touch of personality, fostering a sense of connection and warmth. One pivotal aspect of the design process centers around the calculator, users should have the ability to effortlessly choose between different measurement units—be it inches, centimeters, or meters—to input horse measurements with ease and precision and most importanttly, have fun! Images and quotes were included to achieve this. Additonially, sections filled with informative videos and captivating images provide valuable insights and visual delights, enhancing the user journey with every interaction.
+The design approach aimed to blend functionality with aesthetic. The serene grass background and charming cartoon horse icon, gracefully following users across each page, adds a delightful touch of personality,. One pivotal aspect of the design process centers around the calculator, users should have the ability to effortlessly choose between different measurement units—be it inches, centimeters, or meters—to input horse measurements with ease and precision and most importanttly, have fun! Images and quotes were included to achieve this. Additonially, sections filled with informative videos and captivating images provide valuable insights and visual delights, enhancing the user journey with every interaction.
 
 ### Colour Scheme
 
@@ -51,7 +51,7 @@ I used [coolors.co](https://coolors.co/ffffff-000000-ebe847-5a7722) to generate 
 ### Returning Site Users
 
 - As a returning site user, I would like to reuse the calculator with different measurments, so that I can have different results.
-- As a returning site user, I would like to quickly and easily access the advice I need it without having to run the calculator, so that I can use it as guide.
+- As a returning site user, I would like to revisit the advice section without having to use the calculator, so that I can have it as guide.
 
 ## Wireframes
 
@@ -135,11 +135,11 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 
 The live link can be found [here](https://meganroberts-dev.github.io/fit_horse)
 
-> ### Local Deployment
+### Local Deployment
 
 This project can be cloned or forked in order to make a local copy on your own system.
 
-> #### Cloning
+#### Cloning
 
 You can clone the repository by following these steps:
 
@@ -160,7 +160,7 @@ You can clone the repository by following these steps:
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
 
-> #### Forking
+#### Forking
 
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
@@ -168,6 +168,7 @@ You can fork this repository by using the following steps:
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/MeganRoberts-dev/fit_horse)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+
 
 ## Credits
 
@@ -198,7 +199,5 @@ You can fork this repository by using the following steps:
 
 ### Acknowledgements
 > [!IMPORTANT]  
->  I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their excellent moduale teaching.
-> I would like to especially thank my fantastic Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his unwavering  support, encouragment and invaluable adivce throughout the enjoyable development of this project.
->Lastly would like to thank my brilliant Code Institue cohort facilitator, [Amy Richardson](https://code-institute-room.slack.com/team/U06CZC2JZTN) for her kind words and inspiration. 
+> I would especially like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN), for his unwavering  support, encouragment and invaluable adivce throughout the enjoyable development of the project and my brilliant Code Institue cohort facilitator, [Amy Richardson](https://code-institute-room.slack.com/team/U06CZC2JZTN), for her kind words of inspiration and support when juggling ideas for the project.
 
