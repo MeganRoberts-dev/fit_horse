@@ -121,7 +121,6 @@ I have created wireframes for dekstop, tablet and mobile using the devleopling t
 - [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-grey?logo=githubpages&logoColor=222222)](https://pages.github.com) used for hosting the deployed front-end site.
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [![ChatGPT](https://img.shields.io/badge/ChatGPT-grey?logo=chromatic&logoColor=75A99C)](https://chat.openai.com) used to help debug, troubleshoot, and explain things.
-- [![Compresspng](https://compresspng.com/)](https://compresspng.com/) used for compressing image sizes.
 
 ## Testing
 
@@ -196,7 +195,7 @@ You can fork this repository by using the following steps:
 | [Flaticon](https://www.flaticon.com/free-sticker/horse_10252666?term=horse&page=1&position=3&origin=tag&related_id=10252666) | Entire site| Sticker | Cartoon horse icon |
 | [Youtube](https://www.youtube.com/watch?v=Xo70mDNj7b0) | Information modal | Video | Video explaining how to get measurements |
 | [Bootstrap icons](https://icons.getbootstrap.com/) | Information icon | Icon | Information toggle
-
+| [Compresspng](https://compresspng.com/) | Entire site | Images | Used for compressing image sizes
 ### Acknowledgements
 
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their excellent moduale teaching.
