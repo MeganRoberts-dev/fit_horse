@@ -5,7 +5,7 @@
 ## Code Validation
 ### HTML
 
-I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
+The recommended [HTML W3C Validator](https://validator.w3.org) was used to validate all HTML files.
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -15,7 +15,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ### CSS
 
-I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+The recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to validate all CSS files.
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -23,7 +23,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+The recommended [JShint Validator](https://jshint.com) was used to validate all of my JS files.
 
 | Directory | File | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 ## Browser Compatibility
 
-I've tested my deployed project on multiple browsers to check for compatibility issues.
+The deployed project has been tested on multiple browsers to check for compatibility issues.
  | Broswer | Home  | Calculator | Advice | Notes |
 | :------------ |:---------------:| -----:| -----:| -----:|
 | Chrome |  ![screenshot](documentation/browsers/chrome-index.png)  | ![screenshot](documentation/browsers/chrome-cal.png) | ![screenshot](documentation/browsers/chrome-advice.png) | Works as expected |
@@ -52,7 +52,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Lighthouse Audit
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+The deployed project has been tested using the Lighthouse Audit tool to check for any major issues.
 
   | Page | Desktop  | Mobile |  Notes |
 | :------------ |:---------------:| -----:| -----:|
@@ -66,7 +66,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- |
 | As a new site user, I would like to have a brief desciprtion when entering, so that I can understand what the site is about. | ![screenshot](documentation/features/landing-page.png) |
 | As a new site user, I would like to use the calculator easily and with different measuring units, so that I can get correct results depending on my measuring tool. | ![screenshot](documentation/features/calculator.png) |
-|  As a new site user, I would like to learn how to gather correct measurements, so that I implement it into the calculator. | ![screenshot](documentation/features/information-toggle.png) |
+|  As a new site user, I would like to learn how to gather a horses measurements, if I am not aware. | ![screenshot](documentation/features/information-toggle.png) |
 | As a new site user, I would like to gain knowledge on how to imporve my horses health based on the results I recieved, so that I can become a better equestrian owner.| ![screenshot](documentation/features/advice-modal.png) |
 | As a new site user, I would like to use a restart button, incase I have multiple horses' weights to check.| ![screenshot](documentation/features/try-again-button.png) 
 | As a returning site user, I would like to reuse the calculator with different measurments, so that I can have different results. | ![screenshot](documentation/features/calculator.png) |
