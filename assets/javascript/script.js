@@ -5,8 +5,9 @@ let reset = document.getElementById('reset');
 let horseImage = document.getElementById("image");
 let heartGirthInput = document.getElementById('heartgirth');
 let lengthInput = document.getElementById('bodyLength');
-let weightKg, heartGirth, bodyLength = 0;
-let heartGirthValid, lengthValid = false;
+let weightKg, heartGirth, length = 0; // Reset length to 0
+let heartGirthValid = false; // Initialize validity flags separately
+let lengthValid = false;
 let resultsLink = document.getElementById("results-link");
 let modalInfo = document.getElementById("modal");
 document.getElementById('heartgirth_units').addEventListener("change", calculateWeight);
@@ -14,7 +15,6 @@ document.getElementById('length_units').addEventListener("change", calculateWeig
 let calcCm = 0.393700787;
 let calcM = 39.3700787;
 const icons = document.querySelectorAll('.logo');
-
 
 //* Add hover effect to each icon
 icons.forEach(icon => {
@@ -28,7 +28,8 @@ icons.forEach(icon => {
         icon.classList.remove('jiggle');
     });
 });
-//* Stop iframe video playing when modal is closes *//
+
+//* Stop iframe video playing when modal is closed *//
 $(document).ready(function() {
     $('#modalInfo').on('hidden.bs.modal', function (e) {
         // Find the iframe within the modal
@@ -39,6 +40,7 @@ $(document).ready(function() {
         $iframe.attr('src', src);
     });
 });
+
 //* Calculator functions *//
 function calculateWeight() {
     // Convert heart girth to inches
@@ -78,26 +80,24 @@ function updateResults() {
 
     // Result
     result.innerText =  + Math.floor(weightKg) + " kg";
-    let weightCatagory;
+    let weightCategory;
     // Determine horse image based on weight
     if (weightKg >=1500) {
-        weightCatagory = 'elephant';
+        weightCategory = 'elephant';
     }
     else if (weightKg >= 850) {
-        weightCatagory = 'overweight';
+        weightCategory = 'overweight';
     } else if (weightKg >= 550) {
-        weightCatagory = 'healthy';
+        weightCategory = 'healthy';
     } else if (weightKg >= 250) {
-        weightCatagory = 'underweight';
+        weightCategory = 'underweight';
     } else if (weightKg >= 50) {
-        weightCatagory = 'small';
-    } else if (weightKg >=10) {
-        weightCatagory = 'invalid';
+        weightCategory = 'small';
     } else {
-        weightCatagory = "";
-    }
+        weightCategory = 'invalid';
+    } 
     let img, txt;
-    switch (weightCatagory) {
+    switch (weightCategory) {
         case 'elephant':
             img = "elephant";
             txt = "\nIs that an elephant?";
@@ -124,7 +124,7 @@ function updateResults() {
             break;
     }
     horseImage.src = `assets/images/${img}.png`;
-    horseImage.alt = `image of ${weightCatagory} horse`;
+    horseImage.alt = `image of ${weightCategory} horse`;
     result.innerText += txt;
 }
 
@@ -132,9 +132,8 @@ function updateResults() {
 heartGirthInput.addEventListener("input", getHeartGirth);
 lengthInput.addEventListener ("input", getLength);
 
-
 function getHeartGirth() {
-     // grab the value of the heartgirth based on user input
+    // grab the value of the heart girth based on user input
     heartGirth = heartGirthInput.value;
     if (heartGirthInput.value == "") {
         heartGirth = 0;
@@ -160,7 +159,7 @@ function getLength() {
 }
 
 function checkIfValid() {
-     // grab the value of both varibales based on user input
+    // grab the value of both variables based on user input
     if (heartGirthValid && lengthValid) {
         calculateWeight();
         modalInfo.style.display = "none";
@@ -181,4 +180,7 @@ reset.addEventListener("click", function () {
     resultsLink.style.display = "none";
     horseImage.src = "assets/images/jumping-icon.png";
     modalInfo.style.display = 'block';
+    // Reset validity flags
+    heartGirthValid = false;
+    lengthValid = false;
 });
