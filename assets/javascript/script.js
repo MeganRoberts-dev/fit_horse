@@ -91,8 +91,10 @@ function updateResults() {
         weightCatagory = 'underweight';
     } else if (weightKg >= 50) {
         weightCatagory = 'small';
-    } else {
+    } else if (weightKg >=10) {
         weightCatagory = 'invalid';
+    } else {
+        weightCatagory = "";
     }
     let img, txt;
     switch (weightCatagory) {
